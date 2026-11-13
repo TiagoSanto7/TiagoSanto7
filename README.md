@@ -1,7 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/readme/header-dark.svg">
-  <img src="assets/readme/header-light.svg" alt="Tiago Santo — building AI agents. Brazilian developer and AI Engineering postgrad who orchestrates AI agents and connects software and hardware." width="100%">
-</picture>
+<img src="assets/readme/header-dark.svg" alt="Tiago Santo — building AI agents. Brazilian developer and AI Engineering postgrad who orchestrates AI agents and connects software and hardware." width="100%">
 
 <br>
 
@@ -53,7 +50,6 @@ Got an innovative idea, a project to collaborate on, or just want to connect? It
 
 <p>
   <a href="mailto:tiagoalvessoares17@gmail.com"><img src="https://img.shields.io/badge/Email-tiagoalvessoares17%40gmail.com-1C33FF?style=for-the-badge&labelColor=0E0F14&logo=gmail&logoColor=FAFAF7" alt="Email" /></a>
-  <a href="https://www.instagram.com/tii_aago/"><img src="https://img.shields.io/badge/Instagram-%40tii__aago-1C33FF?style=for-the-badge&labelColor=0E0F14&logo=instagram&logoColor=FAFAF7" alt="Instagram @tii_aago" /></a>
 </p>
 
 <br>
