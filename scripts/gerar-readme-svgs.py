@@ -133,8 +133,8 @@ def header(theme):
     b.append(txt(MONO, 'GITHUB · V1', W-M, 73, 17, fg, 1.5, 'end'))
     # titulo
     y1, y2, size = 214, 340, 106
-    b.append(txt(ANTON, 'CONSTRUINDO', M, y1, size, fg, 1))
-    word = 'AGENTES DE IA.'
+    b.append(txt(ANTON, 'BUILDING', M, y1, size, fg, 1))
+    word = 'AI AGENTS.'
     ww = ANTON.width(word, size, 1)
     pad = 18
     b.append(f'<rect x="{M-6}" y="{y2-size*0.86:.0f}" width="{ww+pad*2-6:.0f}" height="{size*1.06:.0f}" fill="{AZUL}"/>')
@@ -142,11 +142,11 @@ def header(theme):
         b.append(f'<rect x="{M-6}" y="{y2-size*0.86:.0f}" width="{ww+pad*2-6:.0f}" height="{size*1.06:.0f}" fill="url(#sl)"/>')
     b.append(txt(ANTON, word, M+pad-6, y2, size, BRANCO, 1))
     # subtitulo
-    b.append(txt(SG, 'Dev brasileiro. Orquestro agentes de IA e conecto', M, 412, 22, mute))
-    b.append(txt(SG, 'software, sistemas e hardware (IoT).', M, 442, 22, mute))
+    b.append(txt(SG, 'Brazilian developer. AI Engineering postgrad.', M, 412, 22, mute))
+    b.append(txt(SG, 'I orchestrate AI agents and connect software and hardware.', M, 442, 22, mute))
     # rodape
-    b.append(txt(MONO, '+ PYTHON / AGENTES / IoT', M, H-36, 14, fg, 1.5))
-    b.append(txt(MONO, 'BRASIL · 2026', W-M, H-36, 14, fg, 1.5, 'end'))
+    b.append(txt(MONO, '+ PYTHON / AI AGENTS / IoT', M, H-36, 14, fg, 1.5))
+    b.append(txt(MONO, 'BRAZIL · 2026', W-M, H-36, 14, fg, 1.5, 'end'))
     # grade de elementos
     cs, gap = 150, 16
     gx, gy = W - M - 2*cs - gap, 120
@@ -161,7 +161,7 @@ def header(theme):
             if not dark: b.append(f'<rect x="{x}" y="{y}" width="{cs}" height="{cs}" fill="{BRANCO}"/>')
         b.append(f'<rect x="{x+1}" y="{y+1}" width="{cs-2}" height="{cs-2}" fill="none" stroke="{BRANCO if dark else TINTA}" stroke-width="2"/>')
         b.append(fn(x+cs/2, y+cs/2, cs*0.38, col))
-    return svg(W, H, ''.join(b), 'Tiago Santo — construindo agentes de IA')
+    return svg(W, H, ''.join(b), 'Tiago Santo — building AI agents')
 
 # ---------- titulos de secao (modo laboratorio) ----------
 def secao(num, nome, theme):
@@ -174,7 +174,7 @@ def secao(num, nome, theme):
     b.append(txt(ANTON, nome, 42, 70, 40, fg, 0.5))
     return svg(W, H, ''.join(b), f'{num} {nome}')
 
-SECOES = [('01', 'SOBRE'), ('02', 'O QUE EU FAÇO'), ('03', 'EM CONSTRUÇÃO'), ('04', 'CONTATO'), ('05', 'NÚMEROS')]
+SECOES = [('01', 'ABOUT'), ('02', 'WHAT I DO'), ('03', 'IN PROGRESS'), ('04', 'CONTACT'), ('05', 'STATS')]
 
 for t in ('dark', 'light'):
     open(f'{OUT}/header-{t}.svg', 'w').write(header(t))
