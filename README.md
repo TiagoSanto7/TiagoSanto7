@@ -59,10 +59,12 @@ Got an innovative idea, a project to collaborate on, or just want to connect? It
   <img src="assets/readme/secao-05-light.svg" alt="05 Stats" width="100%">
 </picture>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TiagoSanto7&show_icons=true&hide_border=true&bg_color=04060F&title_color=FAFAF7&text_color=EEEDE7&icon_color=1C33FF&ring_color=1C33FF" alt="Tiago's GitHub stats" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TiagoSanto7&layout=compact&hide_border=true&bg_color=04060F&title_color=FAFAF7&text_color=EEEDE7" alt="Top languages" height="160" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/readme/stats-dark.svg">
+  <img src="assets/readme/stats-light.svg" alt="Tiago's GitHub stats: contributions, repositories, pull requests, stars and top languages" width="100%">
+</picture>
+
+<sub>Updated daily by a GitHub Action in this repo.</sub>
 
 <br>
 
