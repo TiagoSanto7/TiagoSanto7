@@ -7,7 +7,7 @@ from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 
-F = os.environ.get('FONTES', 'fontes/')  # pasta com Anton.ttf, SG.ttf (Space Grotesk 400) e JBM.ttf (JetBrains Mono)
+F = os.environ.get('FONTES', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fontes/'))  # pasta com Anton.ttf, SG.ttf (Space Grotesk 400) e JBM.ttf (JetBrains Mono)
 OUT = sys.argv[1]
 os.makedirs(OUT, exist_ok=True)
 
